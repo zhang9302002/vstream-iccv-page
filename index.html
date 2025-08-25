@@ -50,29 +50,31 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h3 class="title is-3 publication-title" style="color: #b24a8a;"><b>[ICCV 2025]</b></h3>
-            
+
             <div style="position: relative; width: 100%; display: flex; align-items: center; justify-content: center;">
               <img src="static/images/logo.jpg" alt="Flash-VStream Logo"
-                  style="position: absolute; left: -5%; top: 50%; transform: translateY(-50%); height: 60px;">
+                style="position: absolute; left: -5%; top: 50%; transform: translateY(-50%); height: 60px;">
               <h1 class="title is-1 publication-title" style="margin: 0 auto; text-align: center; width: 100%;">
-                <span style="color: #177cb0;">Flash-VStream</span>: Efficient Real-Time Understanding for Long Video Streams
+                <span style="color: #177cb0;">Flash-VStream</span>: Efficient Real-Time Understanding for Long Video
+                Streams
               </h1>
             </div>
 
 
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://zhang9302002.github.io/">Haoji Zhang </a><sup>1*</sup>,</span>
+                <a href="https://zhang9302002.github.io/">Haoji Zhang</a><sup>1*</sup>,</span>
               <span class="author-block">
                 <a href="https://github.com/InvincibleWyq/">Yiqin Wang</a><sup>1*</sup>,</span>
               <span class="author-block">
-                <a href="https://andytang15.github.io/">Yansong Tang </a><sup>1&#9993;</sup>,</span>
+                <a href="https://andytang15.github.io/">Yansong Tang</a><sup>1&#9993;</sup>,</span>
               <span class="author-block">
                 <a href="https://yongliu20.github.io/">Yong Liu</a><sup>1</sup>,</span>
               <span class="author-block">
                 <a href="https://sites.google.com/site/jshfeng/home">Jiashi Feng</a><sup>3</sup>,</span>
               <span class="author-block">
-                <a href="https://scholar.google.com.sg/citations?user=OEZ816YAAAAJ&hl=en">Xiaojie Jin</a><sup>2,3&#9993;&dagger;</sup></span>
+                <a href="https://scholar.google.com.sg/citations?user=OEZ816YAAAAJ&hl=en">Xiaojie
+                  Jin</a><sup>2,3&#9993;&dagger;</sup></span>
             </div>
 
             <div class="is-size-6 publication-authors">
@@ -90,8 +92,7 @@
             <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block">
-                  <a href="http://arxiv.org/abs/2506.23825"
-                    class="external-link button is-normal is-rounded is-dark">
+                  <a href="http://arxiv.org/abs/2506.23825" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
@@ -154,7 +155,9 @@
         <div class="content has-text-justified">
           <p>
             <strong>
-              We proposed <span style="color: #177cb0;">Flash-VStream</span>, an efficient VLM with a novel Flash Memory mechanism that enables <span style="color: #ca6924;">real-time</span> understanding and Q&A of extremely long video streams.
+              We proposed <span style="color: #177cb0;">Flash-VStream</span>, an efficient VLM with a novel Flash Memory
+              mechanism that enables <span style="color: #ca6924;">real-time</span> understanding and Q&A of extremely
+              long video streams.
               Our model achieves outstanding efficiency on EgoSchema, MLVU, LVBench, MVBench and Video-MME Benchmarks.
             </strong>
           </p>
@@ -166,14 +169,17 @@
       <div class="content has-text-centered">
         <img src="./static/images/teaser.png" alt="Flash-VStream Teaser" width="40%">
         <figcaption>
-          <b>Comparison with previous methods.</b> <span style="color: #177cb0;">Flash-VStream</span> can understand long videos accurately in an online manner. Here “C” denotes critical clues for questions.
+          <b>Comparison with previous methods.</b> <span style="color: #177cb0;">Flash-VStream</span> can understand
+          long videos accurately in an online manner. Here “C” denotes critical clues for questions.
         </figcaption>
       </div>
 
       <div class="content has-text-centered">
         <img src="./static/images/effi.png" alt="Flash-VStream Efficiency Exp" width="40%">
         <figcaption>
-          <b>Response latency / Accuracy on EgoSchema v.s. Inference cost.</b> <span style="color: #177cb0;">Flash-VStream</span> can respond to user queries in real time while maintaining outstanding performance.
+          <b>Response latency / Accuracy on EgoSchema v.s. Inference cost.</b> <span
+            style="color: #177cb0;">Flash-VStream</span> can respond to user queries in real time while maintaining
+          outstanding performance.
         </figcaption>
       </div>
     </div>
@@ -187,7 +193,20 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Benefiting from the advances in large language models and cross-modal alignment, existing multimodal large language models have achieved prominent performance in image and short video understanding. However, the understanding of long videos is still challenging, as their long-context nature results in significant computational and memory overhead. Most existing work treats long videos in the same way as short videos, which is inefficient for real-world applications and hard to generalize to even longer videos. To address these issues, we propose <span style="color: #177cb0;">Flash-VStream</span>, an efficient video language model capable of processing extremely long videos and responding to user queries in real time. Particularly, we design a Flash Memory module, containing a low-capacity context memory to aggregate long-context temporal information and model the distribution of information density, and a high-capacity augmentation memory to retrieve detailed spatial information based on this distribution. Compared to existing models, <span style="color: #177cb0;">Flash-VStream</span> achieves significant reductions in inference latency. Extensive experiments on long video benchmarks and comprehensive video benchmarks, i.e., EgoSchema, MLVU, LVBench, MVBench and Video-MME, demonstrate the state-of-the-art performance and outstanding efficiency of our method.
+              Benefiting from the advances in large language models and cross-modal alignment, existing multimodal large
+              language models have achieved prominent performance in image and short video understanding. However, the
+              understanding of long videos is still challenging, as their long-context nature results in significant
+              computational and memory overhead. Most existing work treats long videos in the same way as short videos,
+              which is inefficient for real-world applications and hard to generalize to even longer videos. To address
+              these issues, we propose <span style="color: #177cb0;">Flash-VStream</span>, an efficient video language
+              model capable of processing extremely long videos and responding to user queries in real time.
+              Particularly, we design a Flash Memory module, containing a low-capacity context memory to aggregate
+              long-context temporal information and model the distribution of information density, and a high-capacity
+              augmentation memory to retrieve detailed spatial information based on this distribution. Compared to
+              existing models, <span style="color: #177cb0;">Flash-VStream</span> achieves significant reductions in
+              inference latency. Extensive experiments on long video benchmarks and comprehensive video benchmarks,
+              i.e., EgoSchema, MLVU, LVBench, MVBench and Video-MME, demonstrate the state-of-the-art performance and
+              outstanding efficiency of our method.
               Code is available <a href="https://github.com/IVGSZ/Flash-VStream">here</a>.
             </p>
           </div>
@@ -210,46 +229,51 @@
             <figcaption>
               <strong>Overview of <span style="color: #177cb0;">Flash-VStream</span> two-process framework.</strong>
               The frame handler process continuously encodes new frames.
-              The question handler process asynchronously responds to human inquiries in real-time. 
-              Flash Memory is composed of interleaved Context Synopsis Memory and Detail Augmentation Memory, organized in chronological order. CSM is updated by clustering low resolution feature maps on an inter-frame level. DAM is updated by retrieving high resolution feature maps of the most informative frames from a feature bank.
+              The question handler process asynchronously responds to human inquiries in real-time.
+              Flash Memory is composed of interleaved Context Synopsis Memory and Detail Augmentation Memory, organized
+              in chronological order. CSM is updated by clustering low resolution feature maps on an inter-frame level.
+              DAM is updated by retrieving high resolution feature maps of the most informative frames from a feature
+              bank.
             </figcaption>
           </div>
 
           <h2 class="title is-3 has-text-centered">Efficient Long Video VQA</h2>
 
-            <div class="content has-text-centered">
-              <img src="./static/images/performance1.png" alt="Results" width="80%">
-            </div>
+          <div class="content has-text-centered">
+            <img src="./static/images/performance1.png" alt="Results" width="80%">
+          </div>
 
-            <div class="content has-text-centered">
-              <img src="./static/images/performance2.png" alt="Results" width="80%">
-            </div>
+          <div class="content has-text-centered">
+            <img src="./static/images/performance2.png" alt="Results" width="80%">
+          </div>
 
-            <div class="content has-text-centered">
-              <img src="./static/images/performance3.png" alt="Results" width="80%">
-            </div>
+          <div class="content has-text-centered">
+            <img src="./static/images/performance3.png" alt="Results" width="80%">
+          </div>
 
           <h2 class="title is-3 has-text-centered">Ablation Studies</h2>
 
-            <div class="content has-text-centered">
-              <img src="./static/images/ablation1.png" alt="Results" width="80%">
-            </div>
-            <div class="content has-text-centered">
-              <img src="./static/images/ablation2.png" alt="Results" width="80%">
-            </div>
+          <div class="content has-text-centered">
+            <img src="./static/images/ablation1.png" alt="Results" width="80%">
+          </div>
+          <div class="content has-text-centered">
+            <img src="./static/images/ablation2.png" alt="Results" width="80%">
+          </div>
 
           <h2 class="title is-3 has-text-centered">Case Study</h2>
 
-            <div class="content has-text-centered">
-              <img src="./static/images/case.png" alt="Results" width="80%">
-              <figcaption class="content has-text-justified">
+          <div class="content has-text-centered">
+            <img src="./static/images/case.png" alt="Results" width="80%">
+            <figcaption class="content has-text-justified">
               </br>
-                <strong> Left: PCA visualization of the Flash Memory distribution. </strong>
-                Each point in it stands for a feature map of a single frame or a slice of memory. The CSM and DAM appropriately represent the distributional characteristics of the feature clusters. 
-                <strong> Right: Case study of Q&A. </strong>
-                Different types of question answering cases show exceptional proficiency of the <span style="color: #177cb0;">Flash-VStream</span> model.
-              </figcaption>
-            </div>
+              <strong> Left: PCA visualization of the Flash Memory distribution. </strong>
+              Each point in it stands for a feature map of a single frame or a slice of memory. The CSM and DAM
+              appropriately represent the distributional characteristics of the feature clusters.
+              <strong> Right: Case study of Q&A. </strong>
+              Different types of question answering cases show exceptional proficiency of the <span
+                style="color: #177cb0;">Flash-VStream</span> model.
+            </figcaption>
+          </div>
 
 
         </div>
@@ -284,7 +308,8 @@
         <div class="column is-8">
           <div class="content has-text-centered">
             <p>
-              &copy; Haoji Zhang, Yiqin Wang 2025. Adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+              &copy; Haoji Zhang, Yiqin Wang 2025. Adapted from <a
+                href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
             </p>
           </div>
         </div>
